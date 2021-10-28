@@ -1,0 +1,72 @@
+<html>
+    <head>
+        <title>Registration Form</title>
+    </head>
+
+    <center> 
+        <img width="100" height="100" src="./companylogo.gif"/>
+        <h3>central Institure of information technology</h3>
+        <h4>plot No.2, Near jerryl lawns, RPTS Road,Laxminagar,Nagpur-440022</h4>
+        <h5>Email: ciit_nagpur@yahoo.com  Mobile:9011501192</h5>
+        <hr/>
+    </center>
+
+    <a href="www.ciit.info">Home</a>
+
+    <form action="save.jsp"  method="post">
+    <legend>General information</legend>
+    <Table border="1" cellspaccing="0" cellpadding="0" align="center" width="400">
+      <tr>
+          <td>First Name</td> <td><input type="text" name="FirstName" size="40" maxlength="40"/></td>  
+     </tr>
+     <tr>
+         <td>Last Name</td> <td><input type="text" name="LastName" size="40" maxlength="40"/></td>
+     </tr>
+     <tr>
+         <td>Password</td> <td><input type="text" name="password"/></td>
+     </tr>
+     <tr>
+         <td>Address</td> <td><textarea name="comment" rows="4" cols="40"></textarea></td>
+     </tr>
+     <tr>
+         <td>Hobby</td> <td> <input type="checkbox" name="Hobby" value="H1" checked="checked"/>
+                                    Hobby1 <br>
+                              <input type="checkbox" name="Hobby" value="H2"/>
+                              Hobby1 </td>      
+    </tr>
+    <tr>
+        <td>Gender</td> <td> <input type="radio" name="Gender" value="M" />Male<br>
+                             <input type="radio" name="Gender" value="F" />Female</td> 
+    </tr>
+    <tr>
+        <td>Qualifications</td> <td><select name="Qualification">
+                                    <option value="1">Graduate</option>
+                                    <option value="2" selected="selected">Post-Graduate</option>
+                                    <option value="3">Doctrate</option>
+                                    </select> </td>                                   
+    </tr>
+    <tr>
+        <td>City</td>  <td><select name="City" Multiple size=3>
+                            <option value="1">Nagpur</option>
+                            <option value="2">Mumbai</option>
+                            <option value="3">Pune</option>
+                            </select></td>
+    </tr>
+
+    <tr>
+        <td>City</td> <td><input type="hidden" name="Logon" value="Admin"/></td>>
+    </tr>
+    </Table>
+    </form>
+
+    <center>
+        <input type="submit" value="send"/>
+        <input type="reset" value="Reset"/>
+    </center>
+
+    <br><br><br>
+    <center>
+        <font size="8" face="arial" color="red"> All Rights Reserver </font>
+    </center>
+</body>
+</html>
