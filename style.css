@@ -1,70 +1,124 @@
-body 
+
+
+.main
 {
-    margin: 0;
-    padding: 0;
-    font-family: sans-serif;
-    background-image: url(background.jpg);
-    background-size: cover;
-    background-position:center;
+width: 100%;
+background:  url(image1.jpg) ;
+background-position: center;
+background-size: cover;
+height: 100%;
 }
-.sign-up-form{
-    width: 300px;
-    box-shadow: 0 0 3px 0 rgba(0,0,0,0.3);
-    background: #fff;
-    padding: 20px;
-    margin: 8% auto 0;
-    text-align: center;
+
+
+.icon{
+    width: 200px;
+    float: left;
+    height: 70px;
 }
-.sign-up-form h1
+
+.logo{
+    color:rgb(97, 93, 88);
+    font-size: 35px;
+    font-family:Arial;
+    padding-left: 20px;
+    float: left;
+    padding-top: 10px;
+}
+.header {
+    background-color: darkorchid;
+    margin-top: 0;
+    border-width: 0;
+    padding: 50px;
+    padding-left: 0px;
+    padding-top: 25px;
+    
+}
+#header{
+    margin-left: 50px;
+    text-align: left;
+}
+.login
 {
-   color: #1c8adb;
-   margin-bottom: 30px;
+    top:0px;
+ text-align: right;
+ 
 }
-.input-box
+.btn{
+    background-color: red;
+    color: antiquewhite;
+}
+.search
 {
-    border-radius: 20px;
-    padding: 10px;
-    margin: 10px 0;
-    width: 100%;
-    border: 1px solid #999;
-    outline: none;
+ border-radius: 20px;
+ padding: 10px;
+ margin: 238px;
+ width: 60%;
+ border-radius: 1px solid #999;
+ padding: 20px;
+ text-align: center;
+ /*width: 357px;*/
+/*margin-right: auto;*/
+/*margin-left: auto;*/
+/*padding-left: 30%;*/
+/*padding-bottom: 40%;*/
+top: 120px;
+bottom: 50%;
+font-size: larger;
+font-style: italic;
 }
-button
+#checkbox
 {
-    color: #fff;
-    width: 100%;
-    padding: 10px;
-    border-radius: 20px;
-    font-size: 15px;
-    margin: 10px 0;
-    border: none;
-    outline: none;
-    cursor: pointer;
+    margin-bottom: 20px;
 }
-.signup-btn
+
+.form{
+    right:0px;
+}
+.footer
 {
-    background-color: #1c8adb;
+    background-color: darkred;
+    /*width: 100%;*/
+    /*margin: 20%;*/
+    margin-top: 0px;
+    height: 166px;
 }
-.twitter-btn
+#author
 {
-    background-color: #21afde;
+    margin: 0px;
 }
-a
+.navbar
+{
+ display: flex;
+ align-items: center;
+ justify-content:right ;
+}
+.nav-links
+{
+    padding: 1px 88px;
+}
+.nav-links li
+{
+    display: inline-block;
+    margin: 0 15px;
+}
+.nav-links li a
 {
     text-decoration: none;
+    color: rgb(146, 29, 94);
+    padding: 0px 24px;
+    position: relative;
 }
-hr
+.nav-links li a::placeholder
 {
-    margin-top: 20px;
-    width: 80%;
+    content:none;
+    background: rgb(2, 58, 10);
+    width: 0%;
+    height: 2px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition:0.5s;
 }
-.or
-{
-    background: #fff;
-    width: 30px;
-    margin: -19px auto 10px;
-}
-img
-{
-  width: 70px;
+.nav-links li a:hover::after{
+    width: 100%;
 }
